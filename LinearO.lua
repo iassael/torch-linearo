@@ -1,8 +1,8 @@
 --[[
-	Torch Linear Unit with Orthogonal Weight Initialization
+    Torch Linear Unit with Orthogonal Weight Initialization
 
-	Exact solutions to the nonlinear dynamics of learning in deep linear neural networks
-	http://arxiv.org/abs/1312.6120
+    Exact solutions to the nonlinear dynamics of learning in deep linear neural networks
+    http://arxiv.org/abs/1312.6120
 
     Copyright (C) 2015 John-Alexander M. Assael (www.johnassael.com)
 
