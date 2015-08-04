@@ -47,9 +47,6 @@ function LinearO:reset()
     local Q1, R1 = torch.qr(M1)
     local Q2, R2 = torch.qr(M2)
 
-    Q1:reshape(self.weight:size(1),self.weight:size(1))
-    Q2:reshape(self.weight:size(2),self.weight:size(2))
-
     self.weight:copy(Q1:narrow(2,1,n_min) * Q2:narrow(1,1,n_min)):mul(initScale)
 
     self.bias:zero()
